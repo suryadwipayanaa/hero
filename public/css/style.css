@@ -1,0 +1,423 @@
+:root{
+    --kuning : #f2b101;
+    --black : #000000;
+    --putih : #ffffff;
+    --biru : #007fc8;
+}
+
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+.benner{
+    width: 100%;
+    height: 100vh;
+    position: relative
+}
+
+.benner img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benner::after{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,.6);
+   content: '';
+}
+
+.header{
+    position: relative;
+    overflow: hidden;
+}
+
+.header .deskrispi{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 99;
+    color: #fff;
+    background-color: rgba(0,0,0,.5);
+    padding: 20px;
+    box-shadow: 2px 1px 3px rgba(255,255,255,.7);
+    border-radius: 7px;
+}
+
+.header .deskrispi h1{
+    font-size: 30px;
+    font-weight: bold;
+    text-shadow: 2px 3px 4px rgba(0,0,0,.5);
+    margin-bottom: 20px;
+}
+
+.montoon-logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: muter 10s infinite;
+}
+
+.header span{
+    color: var(--kuning);
+}
+
+.header a{
+    position: relative;
+    text-decoration: none;
+    color: var(--black);
+    font-weight: bold;
+    background-color: var(--kuning);
+    padding: 13px 36px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    margin: 0 auto;
+    display: block;
+    width: fit-content;
+    margin-top: 40px;
+    transition: 1s ease all;
+}
+
+.header a:hover{
+   background-color: transparent;
+   border:1px solid var(--kuning);
+   color: var(--putih);
+}
+
+
+.header ul{
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.header ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 20px;
+}
+
+.header .kanan{
+    background-color: var(--biru);
+}
+
+
+
+.benner-home{
+    width: 100%;
+    height: 100vh;
+    position: relative
+}
+
+.benner-home img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benner-home::after{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,.6);
+   content: '';
+}
+
+
+.tables{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    color: var(--putih);
+    width: 70%;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px;
+    border-radius: 7px;
+    box-shadow: 2px 1px 3px rgba(255,255,255,.7);
+}
+
+.tables tr th{
+    color: var(--putih);
+    background-color: var(--biru);
+}
+
+.tables span{
+    color: var(--kuning);
+}
+
+.tables h1{
+    font-weight: bold;
+    font-size: 30px;
+    margin-bottom: 30px;
+    text-shadow: 2px 4px 5px rgba(0,0,0,.5);
+}
+
+.tables tbody tr td{
+    color: var(--putih);
+}
+
+.tables .bi-trash3-fill{
+    color: red;
+    font-weight: bold;
+    transition: 1s ease all;
+    cursor: pointer;
+}
+
+.tables .bi-trash3-fill:hover{
+    color: var(--putih);
+    transform: scale(1.1);
+}
+
+.tables .bi-pencil-square{
+    color: var(--putih);
+    transition: 1s ease all;
+}
+
+.tables:last-child(){
+    background-color: var(--biru);
+}
+
+.tables .bi-pencil-square:hover{
+    color: var(--kuning);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.tables .box{
+    display: flex;
+    align-items: center;
+}
+
+.tables .box .kiri{
+    width: 70%;
+}
+
+.tables .box .kanan{
+    width: 30%;
+    text-align: right;
+}
+
+
+.tables .box .kanan a{ 
+    text-decoration: none;
+    color: var(--putih);
+    background-color: var(--biru);
+    padding: 6px 26px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    box-shadow: 2px 3px 2px rgba(0,0,0,.5);
+    font-weight: bold;
+}
+
+.tables .box .kanan a:hover{ 
+    background-color: transparent;
+    border: 1px solid var(--biru);
+}
+
+.tables .btn-back {
+    background-color: var(--kuning);
+    width: fit-content;
+    padding: 6px 26px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.5);
+}
+
+.tables .btn-back:hover{
+    border: 1px solid var(--kuning);
+    background-color: transparent;
+}
+
+.bi-eye-fill{
+    color: var(--biru);
+}
+
+.tables .btn-back a{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s ease all;
+}
+
+.tables .btn-back a:hover{
+  color: var(--putih);
+}
+
+.tables button{
+    background-color: transparent;
+    border: none;
+}
+
+
+.benner-tambah{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.benner-tambah img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.benner-tambah::after{
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(0,0,0,.6);
+   content: '';
+}
+
+
+.tambah-hero{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 999;
+    width: 40%;
+    background-color: rgba(0,0,0,.6);
+    padding: 20px;
+    color: var(--kuning);
+    border-radius: 7px;
+    box-shadow: 2px 1px 3px rgba(255,255,255,.7);
+}
+
+.form-floating{
+    width: 100%;
+    z-index: 99999;
+}
+
+
+.tambah-hero h1{
+    color: var(--putih);
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-shadow: 2px 3px 5px rgba(0,0,0,.5);
+}
+
+.tambah-hero span{
+    color: var(--biru);
+}
+
+.tambah-hero .btn-add button{
+    color: var(--black);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s ease all;
+    background-color: var(--kuning);
+    padding: 7px 26px;
+    border-radius: 6px;
+    width: fit-content;
+    margin: 20px auto;
+    display: block;
+}
+
+.tambah-hero .btn-add button:hover{
+  color: var(--putih);
+  background-color: transparent;
+  border: 1px solid var(--kuning);
+}
+
+.tambah-hero p{
+    color: var(--biru);
+    font-weight: bold;
+}
+
+.tambah-hero .btn-add-back {
+    background-color: var(--biru);
+    width: fit-content;
+    padding: 6px 26px;
+    border-radius: 5px;
+    transition: 1s ease all;
+    box-shadow: 2px 3px 5px rgba(0,0,0,.5);
+}
+
+.tambah-hero .btn-add-back:hover{
+    border: 1px solid var(--biru);
+    background-color: transparent;
+}
+
+.tambah-hero .btn-add-back a{
+    color: var(--putih);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 1s ease all;
+}
+
+.tambah-hero .btn-add-back a:hover{
+  color: var(--putih);
+}
+
+
+
+
+
+
+
+@keyframes muter{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width:992px){
+    .header .deskrispi{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:500px){
+
+    .header .title{
+        width: 100%;
+    }
+
+    .header .title h1{
+        font-size: 20px;
+        text-align: center;
+    }
+    .header .deskrispi p{
+        height: 30vh;
+        overflow: hidden;
+        font-size: 13px;
+        overflow:scroll;
+    }
+
+    .header a{
+        padding: 5px 10px;
+    }
+
+    .header ul li{
+        margin: 5px;
+    }
+
+    .tambah-hero{
+       width: 90%;
+    }
+
+    .tambah-hero h1{
+        font-size: 25px;
+    }
+    
+    
+}
